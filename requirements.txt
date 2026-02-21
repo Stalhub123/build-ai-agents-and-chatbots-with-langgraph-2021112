@@ -1,1 +1,13 @@
-# Specify Python package requirements for your project here (e.g., Mako==1.1.1). If your project doesn't require these, you can leave this file unchanged or delete it.
+streamlit>=1.28.0
+langchain>=0.1.0
+langchain-openai>=0.0.5
+langchain-core>=0.1.0
+langgraph>=0.0.20
+langchain-chroma>=0.1.0
+langchain-community>=0.0.0
+pydantic>=2.0.0
+pandas>=2.0.0
+python-dotenv>=1.0.0
+pysqlite3>=2.4.6
+chromadb>=0.4.0
+pypdf>=4.0.0

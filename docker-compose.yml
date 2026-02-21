@@ -1,0 +1,14 @@
+version: '3.9'
+
+services:
+  chatbot:
+    build: .
+    ports:
+      - "8501:8501"
+    environment:
+      - AZURE_OPENAI_API_KEY=${AZURE_OPENAI_API_KEY}
+      - AZURE_OPENAI_ENDPOINT=${AZURE_OPENAI_ENDPOINT}
+    volumes:
+      - ./data:/app/data
+      - ./data/cache:/app/.streamlit/cache
+    command: streamlit run app.py --server.port=8501 --server.address=0.0.0.0
